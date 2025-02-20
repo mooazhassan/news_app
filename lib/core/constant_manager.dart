@@ -1,8 +1,8 @@
 class ConstantManager {
   static const String sportsID = 'sports';
-  static const String politicsID = 'sports';
-  static const String healthID = 'sports';
-  static const String businessID = 'sports';
-  static const String environmentID = 'sports';
-  static const String scienceID = 'sports';
+  static const String generalID = 'general';
+  static const String healthID = 'health';
+  static const String businessID = 'business';
+  static const String technologyID = 'technology';
+  static const String scienceID = 'science';
 }

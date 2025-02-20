@@ -11,6 +11,8 @@ class ColorsManager {
   static const Color yellow = Color(0xFFF2D352);
   static const Color brown = Color(0xFFCF7E48);
   static const Color grey = Color(0xFF4F5A69);
+  static const Color darkGrey = Color(0xFF42505C);
+
 
 
 }

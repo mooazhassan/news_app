@@ -22,8 +22,8 @@ class CategoryDM {
             bgColor: ColorsManager.redd,
             imagePath: AssetsManager.sportsBg),
     CategoryDM(
-        id: ConstantManager.politicsID,
-        title: StringsManager.politics,
+        id: ConstantManager.generalID,
+        title: StringsManager.general,
         bgColor: ColorsManager.darkBlue,
         imagePath: AssetsManager.politicsBg),
     CategoryDM(
@@ -37,8 +37,8 @@ class CategoryDM {
         bgColor: ColorsManager.brown,
         imagePath: AssetsManager.businessBg),
     CategoryDM(
-        id: ConstantManager.environmentID,
-        title: StringsManager.environmenet,
+        id: ConstantManager.technologyID,
+        title: StringsManager.technology,
         bgColor: ColorsManager.babyBlue,
         imagePath: AssetsManager.environmentBg),
     CategoryDM(

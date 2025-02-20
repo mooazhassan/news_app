@@ -34,6 +34,41 @@ class LightAppStyle {
     fontWeight: FontWeight.w400,
     color: ColorsManager.whitee,
   );
+  static TextStyle selectedLabel = GoogleFonts.exo(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorsManager.whitee,
+  );
+  static TextStyle unSelectedLabel = GoogleFonts.exo(
+    fontSize: 22.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorsManager.green,
+  );
+  static TextStyle articleSource = GoogleFonts.poppins(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorsManager.grey,
+  );
+  static TextStyle articleTitle = GoogleFonts.poppins(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: ColorsManager.darkGrey,
+  );
+  static TextStyle articleTimePuplished = GoogleFonts.inter(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorsManager.grey,
+  );
+  static TextStyle articleContent = GoogleFonts.poppins(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w300,
+    color: ColorsManager.darkGrey,
+  );
+  static TextStyle viewFullArticle = GoogleFonts.poppins(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: ColorsManager.darkGrey,
+  );
 
 
 }

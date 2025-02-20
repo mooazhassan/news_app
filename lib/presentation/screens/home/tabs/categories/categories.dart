@@ -1,14 +1,17 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_appp/core/app_style.dart';
 import 'package:news_appp/core/strings_manager.dart';
 import 'package:news_appp/models/categoryDM.dart';
-import 'package:news_appp/presentation/screens/home/home_drawer/tabs/categories/widgets/category_widget.dart';
+import 'package:news_appp/presentation/screens/home/tabs/categories/widgets/category_widget.dart';
+
+
+typedef OnCategoryClicked = void Function(CategoryDM);
 
 class Categories extends StatelessWidget {
-  Categories({super.key});
+  Categories({super.key, required this.onCategoryClicked});
 
+  OnCategoryClicked onCategoryClicked;
   List<CategoryDM> categoryList = CategoryDM.getAllCategories();
 
   @override
@@ -24,16 +27,19 @@ class Categories extends StatelessWidget {
             ),
             Expanded(
               child: Padding(
-                padding:  REdgeInsets.all(20),
+                padding: REdgeInsets.all(20),
                 child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     mainAxisSpacing: 25,
                     crossAxisSpacing: 20,
-
                   ),
-                  itemBuilder: (context, index) =>
-                      CategoryWidget(categoryDM: categoryList[index], index: index),
+                  itemBuilder: (context, index) => InkWell(
+                      onTap: () {
+                        onCategoryClicked(categoryList[index]);
+                      },
+                      child: CategoryWidget(
+                          categoryDM: categoryList[index], index: index)),
                   itemCount: categoryList.length,
                 ),
               ),
